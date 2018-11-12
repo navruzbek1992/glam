@@ -42,8 +42,8 @@ glam_func=function(x,par,h_fun){
   if(any(!is.finite(x))) stop("'x' contains missing or infinite values")
   if(missing(h_fun) || !(is.function(h_fun) || is.character(h_fun)))
     stop("'h_function_type' must be supplied as a number")
-  if(missing(f_fun) || !(is.function(f_fun) || is.character(f_fun)))
-    stop("'f_function_type' must be supplied as a number")
+  # if(missing(f_fun) || !(is.function(f_fun) || is.character(f_fun)))
+  #   stop("'f_function_type' must be supplied as a number")
   x=x
   par=par
   h_function_type=h_fun
