@@ -1,3 +1,4 @@
 useDynLib(glam3, .registration=TRUE)
 exportPattern("^[[:alpha:]]+")
+export(rcpp_func1)
 importFrom(Rcpp, evalCpp)
