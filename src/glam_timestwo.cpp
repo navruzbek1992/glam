@@ -1,6 +1,5 @@
-// #include <Rcpp.h>
-#include <RcppArmadillo.h>
-//[[Rcpp::depends(RcppArmadillo)]]
+#include <Rcpp.h>
+
 using namespace Rcpp;
 
 // This is a simple example of exporting a C++ function to R. You can
