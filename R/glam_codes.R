@@ -7,32 +7,30 @@ for (i in 1:1){
   library(RcppEigen)
   library(Smisc)
   library(glogis)
-  # library(glam)
   library(parallel)
 }
-sourceCpp('glam_timestwo.cpp')
 
-summary.optim_params <- function(object, ...)
-{
-  # se <- sqrt(diag(object$vcov))
-  # tval <- coef(object) / se
-  TAB <- cbind(Estimate = coef(object))
-  #              , StdErr = se,
-  #              t.value = tval,
-  #              p.value = 2*pt(-abs(tval), df=object$df))
-  res <- list(# call=object$call,
-    coefficients=TAB)
-  class(res) <- "summary.optim_params"
-  # res
-}
+# summary.optim_params <- function(object, ...)
+# {
+#   # se <- sqrt(diag(object$vcov))
+#   # tval <- coef(object) / se
+#   TAB <- cbind(Estimate = coef(object))
+#   #              , StdErr = se,
+#   #              t.value = tval,
+#   #              p.value = 2*pt(-abs(tval), df=object$df))
+#   res <- list(# call=object$call,
+#     coefficients=TAB)
+#   class(res) <- "summary.optim_params"
+#   # res
+# }
 
-print.summary.optim_params <- function(x, ...)
-{
-  # cat("Call:\n")
-  # print(x$call)
-  # cat("\n")
-  printCoefmat(x$coefficients)
-}
+# print.summary.optim_params <- function(x, ...)
+# {
+#   # cat("Call:\n")
+#   # print(x$call)
+#   # cat("\n")
+#   printCoefmat(x$coefficients)
+# }
 # glam_func <- function(data, par, myscale, h_function_type) UseMethod("glam_func")
 # glam_func.default=function(data, par, myscale, h_function_type){
 # }
@@ -173,13 +171,13 @@ glam_func=function(x,par,myscale,h_fun, f_fun){
   f_function_type=f_fun
 
   lehman_function=function (x, par, h_function_type, f_function_type){
-    # glam_myslopefunc=glam::glam_myslopefunc
-    # glam_mydiff1=glam::glam_mydiff1
-    # glam_mydiff2=glam::glam_mydiff2
-    # glam_mydiff3=glam::glam_mydiff3
-    # glam_myfunc4=glam::glam_myfunc4
-    # glam_myfunc5=glam::glam_myfunc5
-    # glam_myfunc6=glam::glam_myfunc6
+#     glam_myslopefunc=glam::glam_myslopefunc
+#     glam_mydiff1=glam::glam_mydiff1
+#     glam_mydiff2=glam::glam_mydiff2
+#     glam_mydiff3=glam::glam_mydiff3
+#     glam_myfunc4=glam::glam_myfunc4
+#     glam_myfunc5=glam::glam_myfunc5
+#     glam_myfunc6=glam::glam_myfunc6
     ## h function has three choices
     ## F function always logistic
     if (h_function_type == 'first') { ## u get first h function and score functions
@@ -303,11 +301,3 @@ print.glam_func <- function(x, ...)
   cat("Asymmetry:")
   print(x$par[2])
 }
-result
-x=rnorm(100,0,1)
-starting_value=c(0,1)
-
-result=glam_func(x, par=starting_value,h_fun='first',f_fun = 'logistic',myscale = 0.01)
-result
-result$par[1]
-summary(result)
