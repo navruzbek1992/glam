@@ -5,8 +5,9 @@ Version: 1.0
 Date: 2018-11-12
 Author: Navruzbek Karamatov
 Maintainer: Your Name <your@email.com>
-Description: One paragraph description of what the package does as one or more full
-          sentences.
+Description: Package estimates asymmetry and location by Generalized Lehmann's Alternative Model (GLAM) model. 
+GLAM is developed theoratically by Miura and Tsukahara (1993).
+
 License: GPL (>= 2)
 URL: https://github.com/navruzbek1992/glam3
 BugReports: https://github.com/navruzbek1992/glam3/issues
