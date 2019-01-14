@@ -17,8 +17,10 @@ Depends on the following libraries:
       RcppEigen,
       Smisc,
       glogis,
-      parallel,
+      parallel
       
+Source functions are written in C++
+
 License: GPL (>= 2)
 URL: https://github.com/navruzbek1992/glam3
 BugReports: https://github.com/navruzbek1992/glam3/issues
