@@ -17,8 +17,6 @@ Depends on the following libraries:
       Smisc,
       glogis,
       parallel
-      
-Source functions are written in C++
 
 License: GPL (>= 2)
 URL: https://github.com/navruzbek1992/glam3
