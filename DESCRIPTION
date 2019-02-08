@@ -11,6 +11,9 @@ License: GPL (>= 2)
 URL: https://github.com/navruzbek1992/glam3
 BugReports: https://github.com/navruzbek1992/glam3/issues
 Reference: Miura and Tsukahara (1989)
+Examples: x = rnorm(100,0,1)
+    glam_func(x, par=c(mean(x),1), h_fun = 'first'
+    # h_fun could be 'first', 'second' and 'third'
 Imports: Rcpp (>= 0.11.0), doParallel, lubridate, dplyr, RcppArmadillo,
         RcppEigen, Smisc, glogis, parallel,
 LinkingTo: Rcpp, RcppArmadillo
