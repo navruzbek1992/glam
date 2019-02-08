@@ -5,8 +5,7 @@ Version: 1.0
 Date: 2018-11-12
 Author: Navruzbek Karamatov
 Maintainer: Your Name <your@email.com>
-Description: Package estimates asymmetry and location by Generalized Lehmann's Alternative Model (GLAM) model. 
-             GLAM is developed theoretically by Miura and Tsukahara (1993).
+Description: Package estimates asymmetry and location by Generalized Lehmann's Alternative Model (GLAM) model.
 
 Depends on the following libraries:
       Rcpp (>= 0.11.0),
