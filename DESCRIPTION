@@ -4,7 +4,7 @@ Title: Estimate asymmetry and location parameter by Generalized Lehmann's Altern
 Version: 1.0
 Date: 2018-11-12
 Author: Navruzbek Karamatov
-Maintainer: Your Name <your@email.com>
+Maintainer: Navruzbek Karamatov <navruzbek1992gmail.com>
 Description: Package estimates asymmetry and location by Generalized Lehmann's Alternative Model (GLAM) model.
 
 Depends on the following libraries:
