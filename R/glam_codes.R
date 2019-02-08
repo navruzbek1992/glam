@@ -10,27 +10,27 @@ for (i in 1:1){
   library(parallel)
 }
 
-summary.optim_params <- function(object, ...)
-{
+# summary.optim_params <- function(object, ...)
+# {
   # se <- sqrt(diag(object$vcov))
   # tval <- coef(object) / se
-  TAB <- cbind(Estimate = coef(object))
+#  TAB <- cbind(Estimate = coef(object))
   #              , StdErr = se,
   #              t.value = tval,
   #              p.value = 2*pt(-abs(tval), df=object$df))
-  res <- list(# call=object$call,
-    coefficients=TAB)
-  class(res) <- "summary.optim_params"
+#  res <- list(# call=object$call,
+#    coefficients=TAB)
+#  class(res) <- "summary.optim_params"
   # res
-}
+#}
 
-print.summary.optim_params <- function(x, ...)
-{
+#print.summary.optim_params <- function(x, ...)
+#{
   # cat("Call:\n")
   # print(x$call)
   # cat("\n")
-  printCoefmat(x$coefficients)
-}
+#  printCoefmat(x$coefficients)
+#}
 # glam_func <- function(data, par, myscale, h_function_type) UseMethod("glam_func")
 # glam_func.default=function(data, par, myscale, h_function_type){
 # }
@@ -159,14 +159,14 @@ glam_func=function(x,par,h_fun){
     return (myscore)
   }
   optim_params=optim(x = x, par=par, h_function_type=h_function_type, lehman_function)
-  class(optim_params)='glam_func'
-  optim_params
+#  class(optim_params)='glam_func'
+  return(optim_params)
 }
-print.glam_func <- function(x, ...)
-{
-  cat("\nCoefficients:\n")
-  cat("Location:")
-  print(x$par[1])
-  cat("Asymmetry:")
-  print(x$par[2])
-}
+#print.glam_func <- function(x, ...)
+#{
+#  cat("\nCoefficients:\n")
+#  cat("Location:")
+#  print(x$par[1])
+#  cat("Asymmetry:")
+#  print(x$par[2])
+#}
