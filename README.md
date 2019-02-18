@@ -1,16 +1,12 @@
 
 
-"Generalized Lehmann's Alternative Model" 
+## "Generalized Lehmann's Alternative Model" 
 
 This library is a set functions to estimate asymmetry and location of random variables based on non-parametric approach.
 Theoretical development is presented in Miura and Tsukahara (1993). 
 
 
-title: "GLAM"
-output: html_document
-
-
-## GLAM installation
+## Installation
 
 Install devtools first in order to install glam package from github. 
 
@@ -30,4 +26,4 @@ glam_func(mydata, par=c(mean(mydata),1), h_fun = 'first')
 
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Function returns location and asymmetry estimates.
