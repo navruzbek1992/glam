@@ -6,13 +6,9 @@ This library is a set functions to estimate asymmetry and location of random var
 Theoretical development is presented in Miura and Tsukahara (1993). 
 
 
----
 title: "GLAM"
 output: html_document
----
 
-```{r setup, include=FALSE}
-```
 
 ## GLAM installation
 
