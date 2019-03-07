@@ -10,10 +10,11 @@ Theoretical development is presented in Miura and Tsukahara (1993).
 
 Install devtools first in order to install glam package from github. 
 
-
+'''
 library(devtools)
 install_github('navruzbek1992/glam3')
 library(glam3)
+'''
 
 ## Example
 
