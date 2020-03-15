@@ -23,4 +23,4 @@ mydata = rnorm(100, 2,3) ## normal dist.
 
 glam_func(mydata, par=c(mean(mydata),1), h_fun = 'first')
 
-Function returns location and asymmetry of random numbers' distribution. Random numberd could be generated from other distirbutions in order to see how the package estimates the assymetry based on non-parametric approach.
+Function returns location and asymmetry of random numbers' distribution. Random numbers could be generated from other distributions in order to check how the package estimates the asymmetry based on non-parametric approach.
