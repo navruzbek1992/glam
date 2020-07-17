@@ -11,8 +11,8 @@ Theoretical development ofthis approach is presented in [Miura and Tsukahara (19
 Steps:
 
 - devtools is required in order to install glam package from github. (library(devtools))
-- install_github('navruzbek1992/glam3')
-- load the library (library(glam3))
+- install_github('navruzbek1992/glam')
+- load the library (library(glam))
 
 
 ## Example
