@@ -19,8 +19,9 @@ Steps:
 
 First generate random numbers and apply glam function. Glam function requires par value to start optimization and type of h function. H function could be chosen as "first", "second" and "third". 
 
+```bash
 data = rnorm(100, 2,3) ## generate random variables from normal distribution.
 
 glam_func(mydata, par=c(mean(data),1), h_fun = 'first')
-
+```
 Function returns location and asymmetry of random numbers' distribution. Random numbers could be generated from other distributions in order to check how this library estimates the asymmetry based on non-parametric approach.
