@@ -10,9 +10,15 @@ Theoretical development ofthis approach is presented in [Miura and Tsukahara (19
 
 Steps:
 
-- devtools is required in order to install glam package from github. (library(devtools))
-- install_github('navruzbek1992/glam')
-- load the library (library(glam))
+- devtools is required in order to install glam package from github. 
+- install the glam package
+- load it
+
+```bash
+library(devtools)
+install_github('navruzbek1992/glam')
+library(glam)
+```
 
 
 ## Example
