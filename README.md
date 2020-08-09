@@ -3,7 +3,7 @@
 ## Generalized Lehmann's Alternative Model
 
 This library contains tools to estimate asymmetry and location of random variables based on non-parametric approach.
-Theoretical development ofthis approach is presented in [Miura and Tsukahara (1993)](http://www3.stat.sinica.edu.tw/statistica/j3n1/j3n17/j3n17.htm). 
+Theoretical development of this approach is presented in [Miura and Tsukahara (1993)](http://www3.stat.sinica.edu.tw/statistica/j3n1/j3n17/j3n17.htm). 
 
 
 ## Installation
