@@ -17,7 +17,7 @@ Steps:
 ```bash
 library(devtools)
 install_github('navruzbek1992/glam3')
-library(glam)
+library(glam3)
 ```
 
 
