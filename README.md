@@ -20,8 +20,8 @@ Steps:
 ```bash
 library(devtools)
 install_local('/home/user/downloads/Smisc_0.3.9.1.tar.gz')
-install_github('navruzbek1992/glam')
-library(glam)
+install_github('navruzk/glam')
+library(glam3)
 ```
 
 
