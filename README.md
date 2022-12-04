@@ -10,12 +10,16 @@ Theoretical development of this approach is presented in [Miura and Tsukahara (1
 
 Steps:
 
-- devtools is required in order to install glam package from github. 
+- devtools is required in order to install glam package from the github
+- download smisc package from https://cran.r-project.org/src/contrib/Archive/Smisc/ it is removed from CRAN in 2020
+- install smisc tar.gz file
 - install the glam package
 - load it
+- test use
 
 ```bash
 library(devtools)
+install_local('/home/user/downloads/Smisc_0.3.9.1.tar.gz')
 install_github('navruzbek1992/glam')
 library(glam)
 ```
